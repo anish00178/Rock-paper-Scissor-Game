@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(242, 206, 161);
+    text-align: center;
+}
+
+h1{
+    color: #af4d98;
+    height:5rem;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+}
+
+.choice{
+    height: 165px;
+    width: 165px;
+    border-radius: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.choice:hover{
+    cursor: pointer;
+    background-color: burlywood;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 15%;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    border: none;
+}
+
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+#user-score,
+#comp-score {
+    font-size: 5rem;
+}
+
+.msz-container{
+    margin-top: 5rem;
+}
+
+
+#msz{
+    background-color: rgb(248, 225, 229);
+    color: #0f1111;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+    
+    .choices {
+        gap: 10px;
+        margin-top: 3rem;
+    }
+    
+    .choice {
+        width: 130px;
+        height: 130px;
+    }
+
+    img{
+        height: 120px;
+        width: 120px;
+    }
+    
+    .score-board {
+        font-size: 1.5rem;
+        gap: 3rem;
+    }
+    
+    #user-score,
+    #comp-score {
+        font-size:4rem;
+    }
+
+    #msz{
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+}
+
